@@ -43,7 +43,6 @@
 
 
 
-
   /* Menu */
 
 .dropdown {
@@ -65,6 +64,7 @@
   background-color: #f9f9f9; 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
+  /* Add this line */
   z-index: 10000;
 }
 
@@ -104,7 +104,7 @@
 
 
 
-  img {
+	img {
     width: 100%;
     text-align: center;
 
@@ -115,13 +115,13 @@ html {
     -moz-osx-font-smoothing: auto; 
     text-rendering: geometricPrecision;
 }
-  body {
+	body {
 
     background-image: url('images/paperbg.jpeg'); 
-      display: flex;
-      justify-content: center;
+		  display: flex;
+		  justify-content: center;
 
-  }
+	}
 
     p {
 
@@ -143,7 +143,7 @@ html {
 
 
 
-  h1 { 
+	h1 { 
     color: black;
     font-size: 60px;
     font-family: 'Engravers Old English Bold', sans-serif;
@@ -168,22 +168,9 @@ html {
     }
 
 
-
-   h3 { 
-    color: black;
-    font-size: 80px;
-   font-family: 'Engravers Old English Bold', sans-serif;
-    text-align: center;
-    }
-
-
-
-
  #line1 { 
 position: absolute;
 padding-top: 5px;
-
-
 
 
 
@@ -326,6 +313,32 @@ font-size: 50px;
  }
 
 
+
+ #titles {
+  width:100%; 
+  float:down;
+}
+
+ #titles1 {
+  width:100%; 
+  float:down;
+}
+
+
+ #titles2 {
+  width:100%; 
+  float:down;
+
+}
+
+
+ #titles3 {
+  width:100%; 
+  float:down;
+
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -424,7 +437,16 @@ font-size: 50px;
    white-space: wrap;
 }
 
+  
 
+#bg {
+  width: 100vw;
+  background-image: url('images/paperbg.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  z-index: 1;
+}
 
 #bg1 {
   width:100%; 
@@ -438,7 +460,7 @@ font-size: 50px;
 
 #bg2 {
     position: relative;
-     background-image: url('images/beigebg.jpeg'); 
+   background-image: url('images/paperbg.jpeg'); 
   background-size: cover;
   background-position: center; 
    overflow: hidden; 
@@ -446,6 +468,17 @@ font-size: 50px;
   width: 100%;
 
 }
+
+
+#bg3 {
+  width:100%; 
+  background-image: url('images/paperbg.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  z-index: 1;
+}
+
 
 
 
@@ -753,117 +786,8 @@ div.scroll-container img {
 #para3 p {
     font-size: 1.5em;
     line-height: 35px;
-     font-family: "Libre Baskerville", serif;
 
 }
-
-#covertitle1 p {
-    white-space: no-wrap;
-    word-spacing: 1em;
-    font-family: 'Engravers Old English Bold', sans-serif;
-    color: black;
-   font-size: 10vw; 
-   text-align: center;
-   top: 50%; 
-   left: 50%; 
-   transform: translate(-50%, -100%); 
-   position: absolute;
-   opacity: 0;
-   animation: fadeIn 4s ease-in forwards;
-   z-index: 2;
-}
-
-.op1{
-    opacity: 0%;
-
-
-}
-
-
-
-#covertitle2 p {
-    white-space: no-wrap;
-    word-spacing: 1em;
-    font-family: 'Engravers Old English Bold', sans-serif;
-    color: black;
-   font-size: 10vw; 
-   text-align: center;
-   top: 50%; 
-   left: 50%; 
-   transform: translate(-50%, -100%); 
-   position: absolute;
-   opacity: 0;
-   animation: fadeIn 4s ease-in forwards;
-   z-index: 2;
-}
-
-
-.op2{
-    opacity: 0%;
-
-
-}
-
-
-#covertitle3 p {
-    white-space: no-wrap;
-    word-spacing: 1em;
-    font-family: 'Engravers Old English Bold', sans-serif;
-    color: black;
-   font-size: 17vw; 
-   text-align: center;
-   top: 50%; 
-   left: 50%; 
-   transform: translate(-50%, -100%); 
-   position: absolute;
-   opacity: 0;
-   animation: fadeIn 4s ease-in forwards;
-   z-index: 2;
-
-}
-
-
-.op3{
-    opacity: 0%;
-
-
-}
-
-
-
-#covertitle4 p {
-    white-space: no-wrap;
-    word-spacing: 1em;
-    font-family: 'Engravers Old English Bold', sans-serif;
-    color: black;
-   font-size: 17vw; 
-   text-align: center;
-   top: 50%; 
-   left: 50%; 
-   transform: translate(-50%, -100%); 
-   position: absolute;
-   opacity: 0;
-   animation: fadeIn 4s ease-in forwards;
-   z-index: 2;
-
-}
-
-
-
-.op4{
-    opacity: 0%;
-
-
-}
-
-
-
-.fade-in-text {
-  opacity: 0; 
-  transform: translateY(20px); 
-  transition: opacity 0.10s ease-out, transform 0.10s ease-out;
-}
-
 
 
 .fade-in-text {
@@ -948,9 +872,9 @@ margin-top: 2000px;
   font-size: 30px; 
   text-align: center;
   width: 200px; 
-  height: 190px;
+  height: 200px;
   background-image: url('images/floralbutton.png'); 
-  background-color: beige;
+  background-color: blue;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1032,7 +956,7 @@ margin-top: 2000px;
   position: absolute;
   animation: drawLine 3s linear forwards;
   left: 25%;
-   top: 34%;
+   top: 47%;
  
 }
 
@@ -1044,7 +968,7 @@ margin-top: 2000px;
   background-color: black; 
   position: absolute;
   left: 25%;
-  top: 50%;
+  top: 76%;
   animation: drawLine 3s linear forwards;
 }
 
@@ -1125,6 +1049,7 @@ padding-left: 1750px;
 
 
 
+
 #mborder {
 
 z-index: 5;
@@ -1132,14 +1057,13 @@ position: relative;
 
 }
 
-
-
 @supports (-webkit-appearance: none) {
  h1, #font, #font1, #font2, #font3, #font4, #font5 {
      -webkit-font-smoothing: none;
     text-rendering: auto;
+    font-family: 'EngraversOldEnglishRegular'; 
+        font-weight: normal;
+
   }
 }
-
-
 
